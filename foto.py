@@ -6,5 +6,3 @@ class Foto:
 		self.ListofTags = ListofTags
 
 
-	def juntarTags(lista1, lista2):
-		

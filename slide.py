@@ -7,18 +7,18 @@ class Slide:
 
 
 	def damePrimera:
-		self.id1
+		return self.id1
 
 
 	def dameSegunda:
-		self.id2
+		return self.id2
 
 	def dameID:
-		self.idSlide
+		return self.idSlide
 
 
 	def dameTags:
-		self. ListofTags
+		return self. ListofTags
 
 
 
