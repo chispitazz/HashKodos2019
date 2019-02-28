@@ -39,4 +39,7 @@ class tripleta:
     def tagsUltimo(self):
         return self.listaSlide[0]
 
+    def dameSlides(self):
+    	return self.listaSlide
+
     
