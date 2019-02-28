@@ -3,7 +3,8 @@ import foto
 import slide
 
 class tripleta:
-    def __init__ (self):
+    def __init__ (self, identificador):
+        self.id = identificador
         self.listaSlide = []
 
     def anyadirSlide(self, idSlide):
@@ -28,6 +29,9 @@ class tripleta:
                 dif1 = dif1 + 1
             iguales = False
         return min(dif1, len(tags2), eq)
+
+    def permutas(self):
+
 
     def tagsPrimero(self):
         return self.listaSlide[2]
