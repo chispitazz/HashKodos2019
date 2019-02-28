@@ -31,7 +31,7 @@ class tripleta:
         return min(dif1, len(tags2), eq)
 
     def permutas(self):
-
+        
 
     def tagsPrimero(self):
         return self.listaSlide[2]
