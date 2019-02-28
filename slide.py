@@ -6,18 +6,18 @@ class Slide:
 		self.ListofTags = ListofTags
 
 
-	def damePrimera:
+	def damePrimera():
 		return self.id1
 
 
-	def dameSegunda:
+	def dameSegunda():
 		return self.id2
 
-	def dameID:
+	def dameID():
 		return self.idSlide
 
 
-	def dameTags:
+	def dameTags():
 		return self. ListofTags
 
 
