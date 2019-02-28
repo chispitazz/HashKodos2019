@@ -31,6 +31,23 @@ class tripleta:
         return min(dif1, len(tags2), eq)
 
     def permutas(self):
+        listaOptima = self.listaSlide.copy()
+        maxValor = self.valorTransicion(self.listaSlide[0].dameTags(), self.listaSlide[1].dameTags()) + self.valorTransicion(self.listaSlide[1].dameTags(), self.listaSlide[2].dameTags())
+        #Primera permutacion
+        auxElem = self.listaSlide.pop()
+        self.listaSlide.insert(0, auxElem)
+        auxValor = self.valorTransicion(self.listaSlide[0].dameTags(), self.listaSlide[1].dameTags()) + self.valorTransicion(self.listaSlide[1].dameTags(), self.listaSlide[2].dameTags())
+        if (auxValor > maxValor):
+            listaOptima = self.listaSlide
+            maxValor = auxValor
+        #Segunda permutacion
+        auxElem = self.listaSlide.pop()
+        self.listaSlide.insert(0, auxElem)
+        auxValor = self.valorTransicion(self.listaSlide[0].dameTags(), self.listaSlide[1].dameTags()) + self.valorTransicion(self.listaSlide[1].dameTags(), self.listaSlide[2].dameTags())
+        if (auxValor > maxValor):
+            listaOptima = self.listaSlide
+            maxValor = auxValor
+        self.listaSlide = listaOptima
 
 
     def tagsPrimero(self):
@@ -38,8 +55,5 @@ class tripleta:
     
     def tagsUltimo(self):
         return self.listaSlide[0]
-
-    def dameSlides(self):
-    	return self.listaSlide
 
     
