@@ -1,4 +1,4 @@
-class Slide:
+class slide:
 	def __init__(self, idSlide, id1, id2, ListofTags):
 		self.idSlide = idSlide
 		self.id1 = id1

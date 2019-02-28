@@ -1,4 +1,4 @@
-class Foto:
+class foto:
 	def __init__(self, idFoto, numTags, ListofTags, Ori):
 		self.idFoto = idFoto
 		self.numTags = numTags
