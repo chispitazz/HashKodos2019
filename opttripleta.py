@@ -1,4 +1,4 @@
-
+import tripleta
 
 def listas(a,b):
 	lista_final=[]
@@ -79,4 +79,17 @@ def optimizar(listaTripletas):
 		listaAux[count]=tripAux
 		count=count+1
 	return listaAux
+
+
+
+def dameOrden(listaTripletas):
+	lista_slides=[]
+	lista=optimizar(listaTripletas)
+	for i in lista:
+		lista_slides=lista_slides+dameSlides(i)
+	return lista_slides
+
+
+
+
 	
